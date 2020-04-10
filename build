@@ -1,0 +1,2 @@
+docker build -t iox-x86-hello-world .
+ioxclient docker package iox-x86-hello-world . -n iox-x86-hello-world --use-targz
