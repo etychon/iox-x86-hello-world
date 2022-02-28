@@ -1,9 +1,9 @@
-descriptor-schema-version: "2.4"
+descriptor-schema-version: "2.12"
 
 info:
-  name: iox-x86-secure-storage-demo
-  description: "Small Linux with CURL to test IOx Secure Storage"
-  version: "1.0"
+  name: iox-x86-hello-world
+  description: "Small Linux hello world"
+  version: "1.1"
   author-link: "http://www.cisco.com"
   author-name: "Cisco Systems"
 
@@ -21,5 +21,6 @@ app:
         interface-name: eth0
   # Specify runtime and startup
   startup:
+    runtime_options: ""
     rootfs: rootfs.tar
     target: ['/bin/sh', '/start.sh']    
